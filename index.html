@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reminder list app">
+<meta name="author" content="Campbell Casey">
+
+<title>Reminders</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container mt-4"> <!-- container start -->
+
+<header class="text-center mb-4">
+<h1>Reminders</h1>
+<p>Keep track of what needs to be done!</p>
+</header>
+
+<nav class="mb-4">
+<h2>Lists</h2>
+<ul class="nav nav-pills">
+<li class="nav-item"><a class="nav-link" href="#today">Today</a></li>
+<li class="nav-item"><a class="nav-link" href="#school">School</a></li>
+<li class="nav-item"><a class="nav-link" href="#personal">Personal</a></li>
+<li class="nav-item"><a class="nav-link" href="#shopping">Shopping</a></li>
+</ul>
+</nav>
+
+<div class="row"> <!-- row start -->
+
+<div class="col-md-6"> <!-- left column start -->
+
+<section id="today" class="card mb-3">
+<div class="card-body"> <!-- today card body start -->
+<h2 class="card-title">Today</h2>
+<ul>
+<li><input type="radio" name="today"> Submit assignment</li>
+<li><input type="radio" name="today"> Email professor</li>
+<li><input type="radio" name="today"> Go to the gym</li>
+</ul>
+</div> <!-- today card body end -->
+</section>
+
+<section id="school" class="card mb-3">
+<div class="card-body"> <!-- school card body start -->
+<h2 class="card-title">School</h2>
+<ul>
+<li><input type="radio" name="school"> Read sociology chapter</li>
+<li><input type="radio" name="school"> Study for media law quiz</li>
+<li><input type="radio" name="school"> Work on design project</li>
+</ul>
+</div> <!-- school card body end -->
+</section>
+
+</div> <!-- left column end -->
+
+<div class="col-md-6"> <!-- right column start -->
+
+<section id="personal" class="card mb-3">
+<div class="card-body"> <!-- personal card body start -->
+<h2 class="card-title">Personal</h2>
+<ul>
+<li><input type="radio" name="personal"> Call family</li>
+<li><input type="radio" name="personal"> Clean room</li>
+<li><input type="radio" name="personal"> Plan meals</li>
+</ul>
+</div> <!-- personal card body end -->
+</section>
+
+<section id="shopping" class="card mb-3">
+<div class="card-body"> <!-- shopping card body start -->
+<h2 class="card-title">Shopping</h2>
+<ul>
+<li><input type="radio" name="shopping"> Milk</li>
+<li><input type="radio" name="shopping"> Bread</li>
+<li><input type="radio" name="shopping"> Protein bars</li>
+</ul>
+</div> <!-- shopping card body end -->
+</section>
+
+</div> <!-- right column end -->
+
+</div> <!-- row end -->
+
+<section class="card mt-4">
+<div class="card-body"> <!-- form card body start -->
+
+<h2>Add a Reminder</h2>
+<p>Enter a task and choose a list.</p>
+
+<form>
+
+<div class="mb-3"> <!-- task input start -->
+<label class="form-label">Task description</label>
+<input type="text" class="form-control" name="task">
+</div> <!-- task input end -->
+
+<div class="mb-3"> <!-- select list start -->
+<label class="form-label">Select a list</label>
+<select class="form-select" name="list">
+<option value="today">Today</option>
+<option value="school">School</option>
+<option value="personal">Personal</option>
+<option value="shopping">Shopping</option>
+</select>
+</div> <!-- select list end -->
+
+<button type="submit" class="btn btn-primary">Add Reminder</button>
+
+</form>
+
+</div> <!-- form card body end -->
+</section>
+
+</div> <!-- container end -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
