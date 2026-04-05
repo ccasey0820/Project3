@@ -1,17 +1,21 @@
 /* ADD YOUR CUSTOM CSS TO THIS FILE BELOW */
+.nav-link {
+    color: #D5573B !important;
+}
+
+.nav-link:hover {
+    color: #D5573B !important;
+}
+
 h1 {
 color: #D5573B;
 font-family: "Caveat", cursive;
 font-weight: 400;
 }
 
-h2 {
-color: #031D44;
-font-family: "Caveat", cursive;
-}
 
 p {
-color: #B8860B;
+color: #ad4902;
 font-family: "Playwrite NZ Basic", cursive;
 }
 
@@ -41,5 +45,11 @@ padding: 10px;
 border-radius: 10px;
 }
 
+
+.btn-primary {
+    background-color: #155929;
+    border: none;
+    transition: 0.3s;
+}
 
 
